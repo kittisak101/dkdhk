@@ -17,3 +17,23 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int &a,int &b,int &c,int &d){
+	for(int i = 0;i<100;i++){
+		int x = rand()%3;
+		if(x == 0){
+			int y = a;
+			a = b;
+			b = y;
+		}
+		if(x == 1){
+			int y = b;
+			b = c;
+			c = y;
+		}
+		if(x == 2){
+			int y = c;
+			c = d;
+			d = y;
+		}
+	}
+}
